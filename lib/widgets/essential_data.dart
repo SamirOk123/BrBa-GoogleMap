@@ -30,7 +30,12 @@ class EssentialData extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              Text(value, style: kDetailsStyle),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Text(value, style: kDetailsStyle),
+                  scrollDirection: Axis.horizontal,
+                ),
+              ),
             ],
           ),
           const Divider(

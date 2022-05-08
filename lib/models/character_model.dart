@@ -37,7 +37,7 @@ class Character {
         charId: json["char_id"],
         name: json["name"],
         birthday: json["birthday"],
-        occupation: List<String>.from(json["occupation"].map((x) => x)),
+        occupation: List<String>.from(json["occupation"].map((x) => x)).toList(),
         img: json["img"],
         status: json["status"],
         nickname: json["nickname"],

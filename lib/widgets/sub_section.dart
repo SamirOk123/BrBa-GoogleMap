@@ -29,7 +29,7 @@ class SubSection extends StatelessWidget {
           const SizedBox(
             height: 6,
           ),
-          Text(details, style: kDetailsStyle),
+         Text(details,style: kDetailsStyle,),
           const Divider(
             color: Colors.transparent,
           )
