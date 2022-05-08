@@ -13,8 +13,10 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.1
+  google_fonts: ^2.3.2
   http: ^0.13.4
   intl: ^0.17.0
+  pull_to_refresh: ^2.0.0
   sizer: ^2.0.15
 
 dev_dependencies:

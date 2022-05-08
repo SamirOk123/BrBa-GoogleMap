@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:breaking_bad/constants.dart';
 import 'package:breaking_bad/views/characters_page.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           title: 'Breaking_Bad',
           debugShowCheckedModeBanner: false,
-          home: CharactersPage(),
+          home:  const CharactersPage(),
           theme: ThemeData(
             colorSchemeSeed: kGreen,
             brightness: Brightness.light,
