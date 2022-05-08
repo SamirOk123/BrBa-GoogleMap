@@ -8,7 +8,6 @@ import 'package:sizer/sizer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   ByteData data =
       await PlatformAssetBundle().load('assets/ca/lets-encrypt-r3.pem');
   SecurityContext.defaultContext
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           title: 'Breaking_Bad',
           debugShowCheckedModeBanner: false,
-          home:  const CharactersPage(),
+          home: CharactersPage(),
           theme: ThemeData(
             colorSchemeSeed: kGreen,
             brightness: Brightness.light,

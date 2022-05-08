@@ -3,9 +3,6 @@ import 'dart:convert';
 List<Character> characterFromJson(String str) =>
     List<Character>.from(json.decode(str).map((x) => Character.fromJson(x)));
 
-String characterToJson(List<Character> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
-
 class Character {
   Character({
     required this.charId,
@@ -37,7 +34,8 @@ class Character {
         charId: json["char_id"],
         name: json["name"],
         birthday: json["birthday"],
-        occupation: List<String>.from(json["occupation"].map((x) => x)).toList(),
+        occupation:
+            List<String>.from(json["occupation"].map((x) => x)).toList(),
         img: json["img"],
         status: json["status"],
         nickname: json["nickname"],
@@ -47,19 +45,4 @@ class Character {
         betterCallSaulAppearance:
             List<int>.from(json["better_call_saul_appearance"].map((x) => x)),
       );
-
-  Map<String, dynamic> toJson() => {
-        "char_id": charId,
-        "name": name,
-        "birthday": birthday,
-        "occupation": List<dynamic>.from(occupation.map((x) => x)),
-        "img": img,
-        "status": status,
-        "nickname": nickname,
-        "appearance": List<dynamic>.from(appearance.map((x) => x)),
-        "portrayed": portrayed,
-        "category": category,
-        "better_call_saul_appearance":
-            List<dynamic>.from(betterCallSaulAppearance.map((x) => x)),
-      };
 }

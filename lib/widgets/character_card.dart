@@ -29,11 +29,12 @@ class CharactersCard extends StatelessWidget {
           ),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Hero(
               tag: 'tag$index',
               child: Container(
-                width: 70.h,
+                width: 70.w,
                 height: 50.h,
                 decoration: BoxDecoration(
                   image: DecorationImage(

@@ -16,3 +16,7 @@ TextStyle kCharacterScreenTextStyle = GoogleFonts.merriweather(
 const kShadow = [
   BoxShadow(offset: Offset(0, 4), blurRadius: 4, color: Colors.black26)
 ];
+
+//URL
+const String kUrl =
+    'https://breakingbadapi.com/api/characters?limit=10&offset=';
