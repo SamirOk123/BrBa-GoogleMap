@@ -1,4 +1,5 @@
 import 'package:breaking_bad/controllers/characters_controller.dart';
+import 'package:breaking_bad/views/google_map_home_screen.dart';
 import 'package:breaking_bad/widgets/character_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -70,8 +71,13 @@ class CharactersPage extends StatelessWidget {
                   );
                 },
               ),
-              const Center(
-                child: Text('Google Map'),
+              Center(
+                child: ElevatedButton(
+                  onPressed: () => Get.to(
+                    () => const GoogleMapHomeScreen(),
+                  ),
+                  child: const Text('Open Google Map'),
+                ),
               ),
             ],
           ),
