@@ -74,7 +74,7 @@ class CharactersPage extends StatelessWidget {
               Center(
                 child: ElevatedButton(
                   onPressed: () => Get.to(
-                    () => const GoogleMapHomeScreen(),
+                    () => GoogleMapHomeScreen(),
                   ),
                   child: const Text('Open Google Map'),
                 ),

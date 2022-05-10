@@ -29,6 +29,7 @@ class CharactersController extends GetxController {
     } else {
       if (currentLoaded > totalCharacters) {
         refreshController.loadNoData();
+        functionsController.showSnackBar(context, 'No more data to load');
         return false;
       }
     }

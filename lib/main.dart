@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return Sizer(
       builder: (context, orientation, deviceType) {
         return GetMaterialApp(
-          title: 'Breaking_Bad',
+          title: 'Breaking Bad & Google Map',
           debugShowCheckedModeBanner: false,
           home: CharactersPage(),
           theme: ThemeData(
