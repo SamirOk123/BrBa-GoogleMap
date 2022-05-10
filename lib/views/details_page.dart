@@ -82,7 +82,9 @@ class DetailsPage extends StatelessWidget {
             ),
             SubSection(
               header: 'Appearance',
-              details: 'Season ' + data.appearance.join(', '),
+              details: data.appearance.length == 0
+                  ? 'Not Appeared'
+                  : 'Season ' + data.appearance.join(', '),
             ),
             SubSection(
               header: 'Better Call Saul Appearance',
